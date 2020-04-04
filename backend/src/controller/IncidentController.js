@@ -12,6 +12,7 @@ module.exports = {
        .limit(5) // definido um limite de 5 incidentes
        .offset((page- 1) * 5) // esquema de paginação pulando 5 limites por paginas
        .select(['incidents.*',
+       'ongs.name',
         'ongs.email',
         'ongs.whatsapp',
         'ongs.city',
